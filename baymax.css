@@ -1,0 +1,562 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    border: 0px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.bighero6challenge.com/proyectos/proyecto26/Carreritas-por-SanFransokio-0000001_0.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.baymax{
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    background-color: none;
+}
+
+
+/* ------------------------cabeza-------------------------- */
+
+.cabeza{
+    position: relative;
+    /* background-image: radial-gradient(white 65%, #aaa 90%); */
+    background-color: #fff;
+    height: 120px;
+    width: 170px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    /* box-shadow: 12px 10px 20px; */
+    
+}
+
+.blcabeza{
+    position:absolute;
+    height: 100px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bizquierdo{
+    top:10px;
+    left: -7px;
+    /* background-image:linear-gradient(to left, white , #aaa 50%); */
+}
+
+.bderecho{
+    top:10px;
+    right: -7px;
+    /* background-image:linear-gradient(to right, white, #aaa 50%); */
+}
+
+.baltura{
+    position: absolute;
+    height: 25px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.barriba{
+    left: 10px;
+    top: -9px;
+    /* background-image:linear-gradient(to top, white, #aaa 50%); */
+
+}
+
+.babajo{
+left: 10px;
+bottom: -9px;
+/* background-image:linear-gradient(to bottom, white, #aaa 50%); */
+
+
+}
+
+.eyes{
+    position: absolute;
+    top: 25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    /* background-color: black; */
+    background-image: radial-gradient(circle at top right, white, black 50%);
+    z-index: 1;
+}
+
+.eyeleft{
+    left:15px;
+}
+
+.eyeright{
+    right: 15px;
+}
+
+.mouth{
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    top: 48px;
+    left: 35px;
+    z-index: 0;
+}
+
+
+/* ----------------------cuerpo----------------------------- */
+
+.cuerpo{
+    position: relative;
+    /* background-image: radial-gradient(white 68%, #aaa); */
+    background-color: white;
+    height: 180px;
+    width: 125px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 30px;
+}
+
+
+.clado{
+    position:absolute;
+    height: 143px;
+    width: 30px;
+    background-color: white;
+    border-radius: 60%;
+}
+
+.cizquierdo{
+    top:20px;
+    left: -10px;
+    /* background-image:linear-gradient(to left, white, #aaa); */
+}
+
+.cderecho{
+    top:20px;
+    right: -10px;
+    /* background-image:linear-gradient(to right, white, #aaa); */
+}
+
+.cabajo{
+    position: absolute;
+    width: 95px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:white;
+    bottom: -3px;
+    left: 15px;
+}
+
+.pantalla{
+    position: absolute;
+    height: 50px;
+    width: 80px;
+    background-color: #e11;
+    right: 10px;
+    top: 35px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 5s;
+
+}
+.pantalla img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* -------------------brazo izquierdo------------------------- */
+
+.brazos{
+    position: absolute;
+    background-color: white;
+    height: 150px;
+    width: 50px;
+    top: 160px;
+
+
+border-bottom-left-radius: 20px 50px; 
+border-bottom-right-radius: 20px 50px;
+}
+
+
+.brazoizquierdo{
+    border-top-left-radius: 30px 50px;
+    left: 155px;
+    transform: rotate(30deg);
+}
+
+.brazoderecho{
+    border-top-right-radius: 30px 50px;
+    right: 155px;
+    transform: rotate(-30deg);
+}
+
+.dedoi1{
+    position: absolute;
+    height: 11px;
+    width: 20px;
+    background-color: white;
+    bottom:-5px;
+    left: 10px;
+    border-radius: 20px;
+    transform: rotate(80deg);
+}
+.dedoi2{
+    position: absolute;
+    height: 12px;
+    width: 20px;
+    background-color: white;
+    bottom:-2px;
+    left: 25px;
+    border-radius: 15px;
+    transform: rotate(60deg);
+}
+
+
+.dedod1{
+    position: absolute;
+    height: 11px;
+    width: 20px;
+    background-color: white;
+    bottom:-5px;
+    right: 10px;
+    border-radius: 20px;
+    transform: rotate(-80deg);
+}
+.dedod2{
+    position: absolute;
+    height: 12px;
+    width: 20px;
+    background-color: white;
+    bottom:-2px;
+    right: 25px;
+    border-radius: 15px;
+    transform: rotate(-60deg);
+}
+
+.manchabrazoder{
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: lightgray;
+    bottom:50px;
+    right:-10px;
+    z-index: 2;
+}
+
+.manchabrazoizq{
+    position: absolute;
+    width: 10px;
+    height: 70px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: lightgray;
+    bottom:50px;
+    left:-10px;
+    z-index: 2;
+}
+
+.logo{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: lightgray;
+    z-index: 3;
+    border: 1px solid black;
+    right:10px;
+    top:15px;
+}
+
+.linealogo1{
+    position:absolute;
+    width:7px;
+    height: 2px;
+    background-color: black;
+    top:12px;
+    left: 0px;
+}
+
+.linealogo2{
+    position:absolute;
+    width: 7px;
+    height: 2px;
+    background-color: black;
+    top:12px;
+    right:0px;
+}
+
+.linealogocentro{
+    position:absolute;
+    width: 6px;
+    height: 2px;
+    background-color: black;
+    top:16px;
+    right:12px;
+}
+
+.lineacderecha{
+    position:absolute;
+    width: 9px;
+    height: 2px;
+    background-color: black;
+    top:14px;
+    right:5px;
+    transform: rotate(-30deg);
+}
+
+.lineacizquierda{
+    position:absolute;
+    width: 9px;
+    height: 2px;
+    background-color: black;
+    top:14px;
+    left:5px;
+    transform: rotate(30deg);
+}
+
+/* ------------piernas-------------- */
+
+.piernas{
+    background-color: white;
+    position: absolute;
+    height: 90px;
+    width: 70px;
+    border-top-left-radius: 20px 80px;
+    border-top-right-radius: 20px 80px;
+    top:320px;
+}
+
+.pizquierda{
+    left: 175px;
+    transform: rotate(10deg);
+    border-bottom-left-radius: 20px 80px; 
+    border-bottom-right-radius: 20px 80px;
+}
+
+.piderecha{
+    right:175px;
+    transform: rotate(-10deg);
+    border-bottom-left-radius: 20px 80px;  
+    border-bottom-right-radius: 20px 80px;
+}
+
+.manchapies{
+    position: absolute;
+    height: 10px;
+    width: 50px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: lightgray;
+    bottom:1px;
+    left:10px;
+}
+
+.mancha2{
+    position: absolute;
+    height: 18px;
+    width: 30px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: lightgray;
+    bottom:1px;
+    left:20px;
+}
+
+
+.manchapiernaizq{
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: lightgray;
+    bottom:20px;
+    left:0px;
+    z-index: 2;
+}
+
+
+.manchapiernader{
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: lightgray;
+    bottom:20px;
+    right:0px;
+    z-index: 2;
+}
+
+
+
+.blinkdertop{
+    right: 15px;
+}
+
+.blinkizqtop{
+    left: 15px;
+}
+
+
+.blink {
+    position: absolute;
+    height: 0px;
+    background-color: white;
+    width: 40px;
+    top: 22px;
+    animation: mymove 5s infinite;
+    z-index: 3;
+
+}
+
+
+
+.blinkderbot{
+    right: 15px;
+}
+
+.blinkizqbot{
+    left: 15px;
+}
+
+.blinkbot {
+    position: absolute;
+    height: 20px;
+    background-color: white;
+    width: 40px;
+    top: 67px;
+    animation: mymovedesplazo 5s infinite;
+    z-index: 3;
+
+}
+
+
+
+.baymax:hover .pantalla {
+opacity: 0.6;
+}
+
+
+@keyframes mymove {
+    from {height:0px;}
+        20%{height: 27px;}
+        30%{height:0px;}
+    to {height: 0px;}
+  }
+
+  @keyframes mymovedesplazo {
+    from {top:67px;}
+        20%{top: 53px;}
+        30%{top:67px;}
+    to {top: 67px;}
+  }
+
+
+
+  @keyframes drunk1 {
+    from {height:0px;}
+        20%{height: 27px;}
+        30%{height:0px;}
+        50%{height:27px;}
+    to {height: 0px;}
+  }
+
+  @keyframes drunk11 {
+    from {top:67px;}
+        20%{top: 53px;}
+        30%{top:67px;}
+        50%{top:53px;}
+    to {top: 67px;}
+  }
+
+  @keyframes drunk2 {
+    from {height:0px;}
+        10%{height:27px;}
+        20%{height: 0px;}
+        30%{height:27px;}
+        50%{height: 0px;}
+    to {height: 0px;}
+  }
+
+  @keyframes drunk22 {
+    from {top:67px;}
+        10%{top:53px;}
+        20%{top: 67px;}
+        30%{top:53px;}
+        50%{top:67px}
+    to {top: 67px;}
+  }
+
+
+  .baymax:hover .blinkdertop{
+    animation: drunk2 5s infinite ;
+  }
+
+  .baymax:hover .blinkderbot{
+  animation: drunk22 5s infinite;
+  }
+
+  .baymax:hover .blinkizqtop{
+    animation: drunk1 5s infinite;
+  }
+
+
+  .baymax:hover .blinkizqbot{
+    animation: drunk11 5s infinite;
+  }
+
+
+.dialogo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+	position: absolute;
+	background: white;
+    border-radius: .4em;
+    height: 80px;
+    width: 120px;
+    top:50px;
+    right:10px;
+    animation:dialogotransition 10s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes dialogotransition{
+    from{ opacity:0;}
+    80%{opacity:1;
+        transform: translateX(10px);}
+    to{opacity:0;}
+}
+
+
+.dialogo:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 9px solid transparent;
+	border-right-color: white;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -4.5px;
+	margin-left: -9px;
+}
+
